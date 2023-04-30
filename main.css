@@ -23,9 +23,9 @@ body {
   color: var(--dark-blue);
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
-  position: relative;
-  margin: 0;
-  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 
 }
 
@@ -36,10 +36,6 @@ body {
   text-align: center;
   border-radius: 1rem;
   padding: 1rem 1rem 2rem 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 12.5%);
 
 }
 
@@ -62,10 +58,4 @@ p {
 .description {
   color: var(--greyish-blue);
   opacity: .5;
-}
-
-@media (min-width: 500px) {
-  .card {
-    transform: translate(-50%, 50%);
-  }
 }
